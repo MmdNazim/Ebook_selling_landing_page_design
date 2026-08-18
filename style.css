@@ -1,0 +1,695 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 18px 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.nav-menu a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buy-button {
+    display: inline-block;
+    background-color: #e6b95a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #e6b95a;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #cc862b;
+    border-color: #e6b95a;
+    transform: translateY(-2px);
+}
+
+.learn-button {
+    display: inline-block;
+    color: #8a8383;
+    padding: 12px 24px;
+    border: 2px solid #77787c;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.learn-button:hover {
+    background-color: #eff6ff;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background-color: #f8fafc;
+    padding: 80px 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    width: 55%;
+}
+
+.new-release {
+    color: #e6b95a;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #e6b95a;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #6b7280;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.hero-price {
+    margin-bottom: 25px;
+}
+
+.current-price {
+    font-size: 34px;
+    font-weight: bold;
+    color: #111827;
+    margin-right: 15px;
+}
+
+.old-price {
+    font-size: 20px;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image {
+    width: 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #e6b95a;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-container {
+    max-width: 900px;
+}
+
+.section-small-title {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #111827;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #6b7280;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.about-content h3 {
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    color: #111827;
+}
+
+.learning-list {
+    list-style: none;
+}
+
+.learning-list li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color: #4b5563;
+}
+
+.learning-list li::before {
+    content: "✓";
+    color: #e6b95a;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features-section {
+    padding: 80px 0;
+    background-color: #f8fafc;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #6b7280;
+}
+
+.features {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.feature-card {
+    width: 33.33%;
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 21px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   PRICING SECTION
+========================= */
+
+.pricing-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.pricing-card {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #dbeafe;
+    border-radius: 15px;
+    background-color: #f8fafc;
+}
+
+.pricing-label {
+    color: #cc862b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.pricing-card h2 {
+    font-size: 28px;
+    margin: 15px 0;
+    color: #111827;
+}
+
+.original-price {
+    font-size: 20px;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.discount-price {
+    font-size: 45px;
+    font-weight: bold;
+    color: #cc862b;
+}
+
+.pricing-description {
+    color: #6b7280;
+    margin: 15px 0 25px;
+}
+
+.pricing-button {
+    width: 100%;
+}
+
+
+/* =========================
+   ORDER FORM
+========================= */
+
+.order-section {
+    padding: 80px 0;
+    background-color: #eff6ff;
+}
+
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.order-content {
+    width: 45%;
+}
+
+.order-content h2 {
+    font-size: 36px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.order-content p {
+    color: #6b7280;
+}
+
+.order-form {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #dbeafe;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 45px;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+}
+
+.submit-button {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e6b95a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #cc862b;
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.reviews {
+    display: flex;
+    gap: 25px;
+}
+
+.review-card {
+    width: 33.33%;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #f9fafb;
+}
+
+.stars {
+    color: #f59e0b;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    color: #6b7280;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.review-card h4 {
+    color: #111827;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+    padding: 80px 0;
+    background-color: #f8fafc;
+}
+
+.faq {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+details {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #111827;
+}
+
+details p {
+    margin-top: 12px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #e6b95a;
+    color: #ffffff;
+    padding-top: 55px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.footer-brand,
+.footer-contact,
+.footer-social {
+    width: 33.33%;
+}
+
+.footer h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.footer h4 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #000000;
+}
+
+.footer a {
+    display: block;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #cc862b;
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 80%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .order-container {
+        flex-direction: column;
+    }
+
+    .order-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .order-form {
+        width: 100%;
+    }
+
+    .reviews {
+        flex-direction: column;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-brand,
+    .footer-contact,
+    .footer-social {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-social a {
+        display: inline-block;
+        margin: 0 8px;
+    }
+
+    .faq {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 400px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .pricing-card {
+        padding: 25px;
+    }
+}
